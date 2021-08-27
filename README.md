@@ -1,12 +1,7 @@
 # Laravel PayPal
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/srmklive/paypal.svg?style=flat-square)](https://packagist.org/packages/srmklive/paypal)
-[![Total Downloads](https://img.shields.io/packagist/dt/srmklive/paypal.svg?style=flat-square)](https://packagist.org/packages/srmklive/paypal)
-[![StyleCI](https://github.styleci.io/repos/43671533/shield?branch=v2.0)](https://github.styleci.io/repos/43671533?branch=v2.0)
-![Tests](https://github.com/srmklive/laravel-paypal/workflows/TestsV2/badge.svg)
-[![Coverage Status](https://coveralls.io/repos/github/srmklive/laravel-paypal/badge.svg?branch=v2.0)](https://coveralls.io/github/srmklive/laravel-paypal?branch=v2.0)
-[![Code Quality](https://scrutinizer-ci.com/g/srmklive/laravel-paypal/badges/quality-score.png?b=v2.0)](https://scrutinizer-ci.com/g/srmklive/laravel-paypal/?branch=v2.0)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/bgaetealvear/paypal-laravel-58.svg?style=flat-square)](https://packagist.org/packages/bgaetealvear/paypal-laravel-58)
 
 - [Introduction](#introduction)
 - [PayPal API Credentials](#paypal-api-credentials)
@@ -36,33 +31,28 @@ https://developer.paypal.com/docs/api/overview/
 * Use following command to install:
 
 ```bash
-composer require srmklive/paypal:~2.0|~3.0
+composer require bgaetealvear/paypal-laravel-58
 ```
 
-If you wish to use PayPal Express Checkout API, please use the following command:
-
-```bash
-composer require srmklive/paypal:~1.0
-```
 
 Perform the following steps if you are using Laravel 5.4 or less.
 
 * Add the service provider to your `providers[]` array in `config/app.php` file like: 
 
 ```php
-Srmklive\PayPal\Providers\PayPalServiceProvider::class
+BGaeteAlvear\PayPal\Providers\PayPalServiceProvider::class
 ```
 
 * Add the alias to your `aliases[]` array in `config/app.php` file like: 
 
 ```php
-'PayPal' => Srmklive\PayPal\Facades\PayPal::class
+'PayPal' => BGaeteAlvear\PayPal\Facades\PayPal::class
 ```
 
 * Run the following command to publish configuration:
 
 ```bash
-php artisan vendor:publish --provider "Srmklive\PayPal\Providers\PayPalServiceProvider"
+php artisan vendor:publish --provider "BGaeteAlvear\PayPal\Providers\PayPalServiceProvider"
 ```
 
 <a name="configuration"></a>
@@ -111,7 +101,7 @@ Following are some ways through which you can access the paypal provider:
 
 ```php
 // Import the class namespaces first, before using it directly
-use Srmklive\PayPal\Services\PayPal as PayPalClient;
+use BGaeteAlvear\PayPal\Services\PayPal as PayPalClient;
 
 $provider = new PayPalClient;
 
@@ -152,7 +142,7 @@ $provider->setCurrency('EUR');
 ## Support
 
 This plugin only supports Laravel 5.1 to 5.8.
-* In case of any issues, kindly create one on the [Issues](https://github.com/srmklive/laravel-paypal/issues) section.
+* In case of any issues, kindly create one on the [Issues](https://github.com/bgaetealvear/paypal-laravel-58/issues) section.
 * If you would like to contribute:
   * Fork this repository.
   * Implement your features.

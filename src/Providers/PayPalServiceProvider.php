@@ -1,14 +1,14 @@
 <?php
 
-namespace Srmklive\PayPal\Providers;
+namespace BGaeteAlvear\PayPal\Providers;
 
 /*
  * Class PayPalServiceProvider
- * @package Srmklive\PayPal
+ * @package BGaeteAlvear\PayPal
  */
 
 use Illuminate\Support\ServiceProvider;
-use Srmklive\PayPal\Services\PayPal as PayPalClient;
+use BGaeteAlvear\PayPal\Services\PayPal as PayPalClient;
 
 class PayPalServiceProvider extends ServiceProvider
 {

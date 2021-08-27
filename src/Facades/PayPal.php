@@ -1,11 +1,11 @@
 <?php
 
-namespace Srmklive\PayPal\Facades;
+namespace BGaeteAlvear\PayPal\Facades;
 
 /*
  * Class Facade
- * @package Srmklive\PayPal\Facades
- * @see Srmklive\PayPal\ExpressCheckout
+ * @package BGaeteAlvear\PayPal\Facades
+ * @see BGaeteAlvear\PayPal\ExpressCheckout
  */
 
 use Illuminate\Support\Facades\Facade;
@@ -19,6 +19,6 @@ class PayPal extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Srmklive\PayPal\PayPalFacadeAccessor';
+        return 'BGaeteAlvear\PayPal\PayPalFacadeAccessor';
     }
 }

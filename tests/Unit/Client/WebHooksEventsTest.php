@@ -1,11 +1,11 @@
 <?php
 
-namespace Srmklive\PayPal\Tests\Unit\Client;
+namespace BGaeteAlvear\PayPal\Tests\Unit\Client;
 
 use PHPUnit\Framework\TestCase;
-use Srmklive\PayPal\Tests\MockClientClasses;
-use Srmklive\PayPal\Tests\MockRequestPayloads;
-use Srmklive\PayPal\Tests\MockResponsePayloads;
+use BGaeteAlvear\PayPal\Tests\MockClientClasses;
+use BGaeteAlvear\PayPal\Tests\MockRequestPayloads;
+use BGaeteAlvear\PayPal\Tests\MockResponsePayloads;
 
 class WebHooksEventsTest extends TestCase
 {

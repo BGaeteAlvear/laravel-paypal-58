@@ -1,6 +1,6 @@
 <?php
 
-namespace Srmklive\PayPal\Tests;
+namespace BGaeteAlvear\PayPal\Tests;
 
 trait MockRequestPayloads
 {

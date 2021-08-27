@@ -1,6 +1,6 @@
 <?php
 
-namespace Srmklive\PayPal\Traits\PayPalAPI;
+namespace BGaeteAlvear\PayPal\Traits\PayPalAPI;
 
 trait CatalogProducts
 {
